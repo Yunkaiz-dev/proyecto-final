@@ -49,7 +49,7 @@ const RecipePage2: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(4); // Default page size
-  const [totalRecipes, setTotalRecipes] = useState<number>(0);
+  const [totalRecipes, setTotalRecipes] = useState<number>(4);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [loggedInUsername, setLoggedInUsername] = useState<string | null>(null);
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
