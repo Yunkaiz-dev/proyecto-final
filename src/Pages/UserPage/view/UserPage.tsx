@@ -192,42 +192,7 @@ const RecipePage: React.FC = () => {
             transform: "translateX(-50%)",
           }}
         >
-          <div style={{ marginLeft: "50px", textAlign: "center" }}>
-            <Title>Busca tus Recetas favoritas</Title>
-            <Paragraph>
-              ¿Listo para cocinar con alma dominicana? ¡Sube el fuego y vamos!
-            </Paragraph>
-          </div>
-        </div>
-        <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
-          <h2>Buscador de Recetas</h2>
-          {/* Campo de búsqueda */}
-          <Search
-            placeholder="Buscar recetas por nombre"
-            onSearch={handleSearch}
-            enterButton="Buscar"
-            size="large"
-            style={{ marginBottom: "20px" }}
-          />
-          {/* Lista de recetas */}
-          <List
-            loading={loading}
-            dataSource={recipes}
-            renderItem={(recipe: Recipe) => (
-              <List.Item>{recipe.name}</List.Item>
-            )}
-            bordered
-          />
-          {/* Paginación */}
-          <Pagination
-            current={currentPage}
-            pageSize={pageSize}
-            total={total}
-            onChange={handlePageChange}
-            showSizeChanger
-            pageSizeOptions={["5", "10", "20"]}
-            style={{ marginTop: "20px", textAlign: "center" }}
-          />
+          <h1>Proximamente</h1>
         </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
